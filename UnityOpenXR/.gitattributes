@@ -1,0 +1,73 @@
+# Unityの標準アセットはテキストファイルとして扱う
+*.cs     text
+*.shader text
+*.cginc  text
+*.hlsl   text
+*.compute text
+*.glsl   text
+
+# テキストベースの設定ファイルを正しく扱う
+*.json   text
+*.xml    text
+*.txt    text
+*.csv    text
+*.asmdef text
+*.log    text
+
+# YAMLファイルはテキストとして扱う
+*.yaml   text
+*.yml    text
+
+# Unityのバイナリファイル
+*.unity  binary
+*.asset  binary
+*.fbx    binary
+*.mat    binary
+*.mp3    binary
+*.ogg    binary
+*.png    binary
+*.jpg    binary
+*.tga    binary
+*.psd    binary
+*.aif    binary
+*.wav    binary
+*.mp4    binary
+*.mov    binary
+*.prefab binary
+*.dll    binary
+*.exe    binary
+*.zip    binary
+*.rar    binary
+*.7z     binary
+*.tar    binary
+
+# Git LFS（大きなファイルの取り扱い）
+*.psb    filter=lfs diff=lfs merge=lfs
+*.hdr    filter=lfs diff=lfs merge=lfs
+*.tiff   filter=lfs diff=lfs merge=lfs
+*.tga    filter=lfs diff=lfs merge=lfs
+
+# テキストファイルの改行コードを変換しないようにする（Unityで発生する可能性のある改行コードの問題を避けるため）
+*.cs eol=lf
+*.shader eol=lf
+*.cginc eol=lf
+*.hlsl eol=lf
+*.compute eol=lf
+*.glsl eol=lf
+*.json eol=lf
+*.xml eol=lf
+*.txt eol=lf
+*.csv eol=lf
+*.asmdef eol=lf
+*.log eol=lf
+*.yaml eol=lf
+*.yml eol=lf
+
+# Ignore certain Unity generated files that don't need to be versioned.
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
